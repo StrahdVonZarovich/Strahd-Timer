@@ -731,7 +731,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-XH-YFG">
                                 <rect key="frame" x="167" y="152" width="146" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="00:00" id="9k0-ae-PjJ">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="9k0-ae-PjJ">
                                     <font key="font" metaFont="system" size="53"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -748,6 +748,9 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="lnL-XH-YFG" id="32F-qb-Bsu"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

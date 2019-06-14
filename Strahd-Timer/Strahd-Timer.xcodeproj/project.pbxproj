@@ -13,6 +13,7 @@
 		FD60779722B3189400BA17FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD60779522B3189400BA17FA /* Main.storyboard */; };
 		FD6077A322B3189400BA17FA /* Strahd_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6077A222B3189400BA17FA /* Strahd_TimerTests.swift */; };
 		FD6077AE22B3189400BA17FA /* Strahd_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6077AD22B3189400BA17FA /* Strahd_TimerUITests.swift */; };
+		FD6077BF22B31F9B00BA17FA /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6077BE22B31F9B00BA17FA /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FD6077A922B3189400BA17FA /* Strahd-TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strahd-TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6077AD22B3189400BA17FA /* Strahd_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strahd_TimerUITests.swift; sourceTree = "<group>"; };
 		FD6077AF22B3189400BA17FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6077BE22B31F9B00BA17FA /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +98,9 @@
 		FD60778E22B3189300BA17FA /* Strahd-Timer */ = {
 			isa = PBXGroup;
 			children = (
-				FD60778F22B3189300BA17FA /* AppDelegate.swift */,
-				FD60779122B3189300BA17FA /* ViewController.swift */,
-				FD60779322B3189400BA17FA /* Assets.xcassets */,
-				FD60779522B3189400BA17FA /* Main.storyboard */,
+				FD6077BD22B31F6600BA17FA /* Controller */,
+				FD6077BC22B31F6100BA17FA /* View */,
+				FD6077BB22B31F5A00BA17FA /* Model */,
 				FD60779822B3189400BA17FA /* Info.plist */,
 				FD60779922B3189400BA17FA /* Strahd_Timer.entitlements */,
 			);
@@ -122,6 +123,32 @@
 				FD6077AF22B3189400BA17FA /* Info.plist */,
 			);
 			path = "Strahd-TimerUITests";
+			sourceTree = "<group>";
+		};
+		FD6077BB22B31F5A00BA17FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD6077BC22B31F6100BA17FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD60779322B3189400BA17FA /* Assets.xcassets */,
+				FD60779522B3189400BA17FA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD6077BD22B31F6600BA17FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD60778F22B3189300BA17FA /* AppDelegate.swift */,
+				FD60779122B3189300BA17FA /* ViewController.swift */,
+				FD6077BE22B31F9B00BA17FA /* Time.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6077BF22B31F9B00BA17FA /* Time.swift in Sources */,
 				FD60779222B3189300BA17FA /* ViewController.swift in Sources */,
 				FD60779022B3189300BA17FA /* AppDelegate.swift in Sources */,
 			);
